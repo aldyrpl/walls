@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="ColorPrimary">#92d468</color>
+  <color name="ColorPrimaryDark">#3b9d48</color>
+  <color name="ColorAccent">#000</color>
+  <color name="window_background">#F5F5F5</color>
+  <color name="splash_background">#92d468</color>
+  <color name="primary_text">#212121</color>
+  <color name="secondary_text">#757575</color>
+  <color name="ColorPrimaryProgress">#3F51B5</color>
+  <color name="ColorPrimaryDarkProgress">#303F9F</color>
+  <color name="SelectedTab">#ffae00</color>
+
+  <color name="bgscreen1">#f64c73</color>
+  <color name="bgscreen2">#20d2bb</color>
+  <color name="bgscreen3">#3395ff</color>
+  <color name="bgscreen4">#c873f4</color>
+
+  <color name="background_app">#dedede</color>
+
+  <color name="background_list_back">#e3e3e3</color>
+  <color name="background_list_front">#ffffff</color>
+  <color name="text_title">#444444</color>
+  <color name="text_description">#7e7e7e</color>
+
+  <color name="line">#ffbcbcbc</color>
+
+  <color name="background_new_tag">#ff0000</color>
+  <color name="text_new_tag">#ffffff</color>
+
+  <color name="list_item_title">#fff</color>
+  <color name="list_background">#303030</color>
+  <color name="list_background_pressed">#F0F014</color>
+  <color name="list_divider">#272727</color>
+  <color name="counter_text_bg">#626262</color>
+  <color name="counter_text_color">#c5c4c4</color>
+  <color name="white">#FFFFFF</color>
+</resources>

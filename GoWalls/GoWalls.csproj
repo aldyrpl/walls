@@ -17,7 +17,7 @@
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -60,11 +60,19 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controller\intro\Intro.cs" />
+    <Compile Include="Controller\intro\SampleSlide.cs" />
+    <Compile Include="Controller\home\home.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
+    <None Include="values\Array.xml" />
+    <None Include="values\Colors.xml" />
+    <None Include="values\dimens.xml" />
+    <None Include="values\Strings.xml" />
+    <None Include="values\Styles.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_main.axml">
@@ -91,12 +99,66 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\group_14.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\group_14.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\group_14.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\group_14.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\group_14.png" />
+    <AndroidResource Include="Resources\values-in\Strings.xml" />
+    <AndroidResource Include="Resources\values-land\dimens.xml" />
+    <AndroidResource Include="Resources\values-large\dimens.xml" />
+    <AndroidResource Include="Resources\values-large-land\dimens.xml" />
+    <AndroidResource Include="Resources\values-xlarge\dimens.xml" />
+    <AndroidResource Include="Resources\values-xlarge-land\dimens.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\group_462.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\group_462.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\group_462.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\group_462.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\group_462.png" />
+    <AndroidResource Include="Resources\layout\intro.xml" />
+    <AndroidResource Include="Resources\layout\intro2.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\group_273.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\group_273.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\group_273.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\group_273.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\group_273.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\group_466.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\group_466.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\group_466.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\group_466.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\group_466.png" />
+    <AndroidResource Include="Resources\layout\intro3.xml" />
+    <AndroidResource Include="Resources\layout\home.xml" />
+    <AndroidResource Include="Resources\anim\fade_in.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
+    <PackageReference Include="AppIntro">
+      <Version>1.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Com.Airbnb.Android.Lottie">
+      <Version>3.0.4</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="values\" />
+    <Folder Include="Resources\values-in\" />
+    <Folder Include="Resources\values-land\" />
+    <Folder Include="Resources\values-large\" />
+    <Folder Include="Resources\values-large-land\" />
+    <Folder Include="Resources\values-xlarge\" />
+    <Folder Include="Resources\values-xlarge-land\" />
+    <Folder Include="Controller\" />
+    <Folder Include="Controller\intro\" />
+    <Folder Include="Controller\home\" />
+    <Folder Include="Resources\anim\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\intro_logo_anim.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
