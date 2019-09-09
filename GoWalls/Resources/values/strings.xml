@@ -2,5 +2,5 @@
 <resources>
     <string name="app_name">Go Walls</string>
     <string name="action_settings">Settings</string>
-    <string name="powermeter">https://unilever.strata-login.com/Account/logon</string>
+    <string name="powermeter">https://unilever.strata-login.com/dashboard/view/17156</string>
 </resources>

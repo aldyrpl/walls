@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GoWalls
 {
-   
+    [Activity(Theme = "@style/AppTheme")]
     public class Home : AppCompatActivity
     {
         public static Activity is_this;

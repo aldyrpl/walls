@@ -32,22 +32,28 @@ namespace GoWalls
 
         public void GetStarted(View v)
         {
-            StartActivity(typeof(Home));
+            this.Finish();
+            StartActivity(typeof(Welcome));
+
         }
 
         public override void OnDonePressed()
         {
             base.OnDonePressed();
-
-            StartActivity(typeof(Home));
+            this.Finish();
+            StartActivity(typeof(Welcome));
+           
         }
 
         public override void OnSkipPressed()
         {
             base.OnSkipPressed();
-            FragmentTransaction transaction = FragmentManager.BeginTransaction();
-            browser signUpDialog = new browser();
-            signUpDialog.Show(transaction, "Pilih Tipe Printer");
+            //FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            //browser signUpDialog = new browser();
+            //signUpDialog.Show(transaction, "Pilih Tipe Printer");
+            this.Finish();
+            StartActivity(typeof(Welcome));
+
             Toast.MakeText(ApplicationContext, Resource.String.skip, ToastLength.Short).Show();
         }
     }

@@ -21,8 +21,9 @@ namespace GoWalls
             LottieAnimationView animationView = FindViewById<LottieAnimationView>(Resource.Id.animation_view);
             animationView.SetAnimation("intro_logo_anim.json");
             animationView.Loop(false);
-            await Task.Delay(3000);
+            await Task.Delay(4000);
             StartActivity(typeof(Intro));
+            Finish();
         }
     }
 }
