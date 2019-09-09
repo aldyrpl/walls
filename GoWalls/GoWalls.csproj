@@ -63,16 +63,12 @@
     <Compile Include="Controller\intro\Intro.cs" />
     <Compile Include="Controller\intro\SampleSlide.cs" />
     <Compile Include="Controller\home\home.cs" />
+    <Compile Include="Controller\browser\browser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
-    <None Include="values\Array.xml" />
-    <None Include="values\Colors.xml" />
-    <None Include="values\dimens.xml" />
-    <None Include="values\Strings.xml" />
-    <None Include="values\Styles.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_main.axml">
@@ -131,6 +127,7 @@
     <AndroidResource Include="Resources\layout\intro3.xml" />
     <AndroidResource Include="Resources\layout\home.xml" />
     <AndroidResource Include="Resources\anim\fade_in.xml" />
+    <AndroidResource Include="Resources\layout\browser.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
@@ -143,9 +140,11 @@
     <PackageReference Include="Com.Airbnb.Android.Lottie">
       <Version>3.0.4</Version>
     </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="values\" />
     <Folder Include="Resources\values-in\" />
     <Folder Include="Resources\values-land\" />
     <Folder Include="Resources\values-large\" />
@@ -156,6 +155,7 @@
     <Folder Include="Controller\intro\" />
     <Folder Include="Controller\home\" />
     <Folder Include="Resources\anim\" />
+    <Folder Include="Controller\browser\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\intro_logo_anim.json" />

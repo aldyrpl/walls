@@ -10,11 +10,12 @@ namespace GoWalls
     [Activity(Label = "@string/app_name", Theme = "@style/FullscreenTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
+        public static Activity is_this;
         protected async override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            // Set our view from the "main" layout resource
+            is_this = this;
             SetContentView(Resource.Layout.activity_main);
 
             LottieAnimationView animationView = FindViewById<LottieAnimationView>(Resource.Id.animation_view);

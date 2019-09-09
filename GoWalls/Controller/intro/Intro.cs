@@ -45,7 +45,9 @@ namespace GoWalls
         public override void OnSkipPressed()
         {
             base.OnSkipPressed();
-            StartActivity(typeof(Home));
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            browser signUpDialog = new browser();
+            signUpDialog.Show(transaction, "Pilih Tipe Printer");
             Toast.MakeText(ApplicationContext, Resource.String.skip, ToastLength.Short).Show();
         }
     }
